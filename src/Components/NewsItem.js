@@ -1,12 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 // import PropTypes from "prop-types";
 
-export class NewsItem extends Component {
+const NewsItem =(props)=> {
   //   static propTypes = {};
-
-  render() {
-    let { title, description, imgurl, newsurl, date, author, source } =
-      this.props;
+    let { title, description, imgurl, newsurl, date, author, source } =props;
 
     return (
       <div className="my-3">
@@ -46,7 +43,7 @@ export class NewsItem extends Component {
         </div>
       </div>
     );
-  }
+  
 }
 
 export default NewsItem;
